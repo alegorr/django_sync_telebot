@@ -1,0 +1,4 @@
+release: python manage.py makemigrations && python manage.py migrate --run-syncdb && python manage.py migrate
+web: gunicorn service1.asgi:application -k uvicorn.workers.UvicornWorker # async gunicorn with unvicorn few times faster! (than simple uvi)
+#web: gunicorn service1.wsgi:application # sync gunicorn standart
+#web: uvicorn service1.asgi:application # async simple uvicorn

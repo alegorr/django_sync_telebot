@@ -1,0 +1,9 @@
+Django
+django-heroku
+dj-database-url
+psycopg2
+gunicorn
+uvicorn
+httpx
+aiohttp
+pyTelegramBotAPI

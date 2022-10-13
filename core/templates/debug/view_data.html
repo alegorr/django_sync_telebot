@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View service1 data</title>
+</head>
+<body>
+  <p><b>Services:</b></p>
+  {% for service in services %}
+  <p>{{service.name}} {{service.address}}</p>
+  {% endfor %}
+  <p><b>Users:</b></p>
+  {% for user in users %}
+  <p>{{user.name}} {{user.id}}</p>
+  {% endfor %}
+  <p><b>Transactions:</b></p>
+  {% for transaction in transactions %}
+  <p>{{transaction.id}} {{transaction.user}} {{transaction.service}} {{transaction.status}} {{transaction.input}} {{transaction.output}}</p>
+  {% endfor %}
+</body>
+</html>
